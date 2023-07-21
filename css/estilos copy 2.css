@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Belanosima&display=swap);
+
+html{
+  scroll-behavior:smooth;
+  position: fixed;
+}
+
+/* ------------ BARRA DE NAVEGACION ------------ */
+#cabecera-principal{
+    margin: 0;
+    color: #000000;
+    /* border-bottom: none; */
+    font-size: 14px;
+    font-weight: 90;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+
+a{
+  color:#ffffff
+}
+
+.bar-nav{
+    display: block;
+    background-color: #ffffff;
+    /* border-bottom: 1px double #000000; */
+    align-items:end;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 1%;
+    left: 1%;
+    width: 100%;
+    background-color: rgba(51, 34, 34, 0.4); /*Cambia el valor alfa para ajustar la transparencia (0.0 a 1.0)*/
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  display: flex;
+  padding: 0rem;
+  align-items: center; /* Centra verticalmente la imagen */
+  margin:10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.logo-img {
+  width: 250px; /* Ajusta el ancho de la imagen según tu preferencia */
+  height: auto; /* Mantiene la proporción de aspecto original */
+  margin-right: auto; /* Alinea el logo a la derecha del contenedor */
+  margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta el ancho de los enlaces según el ancho del navegador */
+    justify-content: space-between; /* Alinea los enlaces a la derecha */
+    font-family: 'Belanosima', sans-serif;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;    
+}
+.links a {    
+    margin-left: 1%; /* Agrega un margen entre los enlaces */
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-decoration: none;
+}
+
+/* ------------Estilos específicos otros dispositivos ----------*/
+/* ------------ Tablet ----------*/
+@media (max-width: 768px) {
+  .logo-img {
+    width: 200px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    margin-right: auto; /* Alinea el logo a la derecha del contenedor */
+    margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Ajusta el ancho de los enlaces según el ancho del navegador */
+    justify-content:center; /* Alinea los enlaces a la derecha */
+    font-family: 'Belanosima', sans-serif;
+    
+    width: 80%;
+  }
+}/* ------------ Tablet ----------*/
+
+/* ------------ Telefono ----------*/
+@media (max-width: 320px) {
+  .logo-img {
+    width: 100px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    margin-right: auto; /* Alinea el logo a la derecha del contenedor */
+    margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
+  }
+
+  #cabecera-principal{
+    font-size: 12px;        
+  }  
+
+  .links {
+    flex-direction: column;
+    align-items: center;  
+  }
+  
+  .links a {    
+    margin-left: 1%; /* Agrega un margen entre los enlaces */
+    margin-right: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-decoration: none;
+  }
+}/* ------------ Telefono ----------*/
+/* ------------Estilos específicos otros dispositivos ----------*/
+
+
+/* -------------------------------------- BARRA DE NAVEGACION Y LOGO ----------------------- */
+
+
+
+/*------------------------TITULO Y FONDO PRINCIPAL------------------------*/
+.seccion-titulo{
+    display: flex;
+    background-image: url(../imagenes/fondo-titulo-2.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    align-items: center;
+    height: 40rem;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titulo {
+    display: inline-block;
+    text-align: center; /* Centrar el texto horizontalmente */
+    line-height: 40px; /* Ajustar la altura de línea para centrar verticalmente */
+    color: #ff7300;
+    font-size: 40px;
+    /* font-weight: bold; */
+    text-shadow: 10px 10px 4px rgba(10, 10, 10, 3.5);
+    -webkit-text-stroke: 0.1px #2b210d; /* Agrega contorno */
+    font-family: 'Belanosima', sans-serif;
+  }
+/*------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------CUERPO Y CONTENIDO------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    padding: 0px;
+    border-left: 5vw solid #00425A;
+    border-right: 5vw solid #00425A;
+    margin: 0px;
+
+  }
+
+#quienes-somos{
+    display: flex;
+    background-color: #120e3a;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 10;
+    color: #e9e6e6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#por-que-elegirnos{
+  display: flex;
+  background-color: #0d380c;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #d3e92b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  scroll-behavior: smooth;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #e9e6e6;
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  text-shadow:0capa 0capa 0capa rgba(0, 0, 0, 0.5);
+  /* font-family: 'B', sans-serif; */
+}
+
+.section-content{
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  padding: 10%;
+}
+.section-content img{
+  width: 80%;
+  max-width: 500px;
+  margin-right: 0%; /* Ajusta el margen derecho para separar la imagen del texto */
+  padding: 10%;
+}
+/*-----------------------------------------------------------------------------------*/

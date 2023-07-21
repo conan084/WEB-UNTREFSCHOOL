@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-y: hidden;
+  }
+
+  .container{
+    background-color: #1f6acc93;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+
+
+  .form-register {
+    width: 450px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-left: 57rem;
+    margin-top: 0;
+    border-radius: 20px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+
+  @media (max-width: 1024px) { /*------------------------------------------*/
+    body img{
+      display: flex;
+      width: 45%;
+      position: fixed;
+      top: 0;
+    }
+    .form-register {
+      width: 450px;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-left: 51%;
+      margin-top: 0;
+      border-radius: 20px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+    }
+    .container{
+      background-color: #1f6acc93;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+    }
+  } /*-----------------------------------------------------------------------------------------------*/
+
+  /* ------------ Tablet ----------*/
+  @media (max-width: 768px) {
+    
+  }
+
+
+  /* ------------ Telefono ----------*/
+  @media (min-width: 320px) {
+    body img{
+      display: none;
+    }
+    .form-register {
+      width: 35rem;
+      height: 40rem;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-left: -16rem;
+      margin-right: 0rem;
+      margin-top: 0;
+      border-radius: 20px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+    }
+    .container{
+      background-color: #1f6acc93;
+      padding-top: 2rem;
+      padding-left: 49%;
+      padding-bottom: 2rem;
+      padding-right: 30rem;
+      width: 130%;
+    }
+  }
+
+
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  #comentario{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    height: 150px;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }  
