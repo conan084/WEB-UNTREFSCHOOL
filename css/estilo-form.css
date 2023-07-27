@@ -30,6 +30,12 @@
   }
 
   @media (max-width: 1024px) { /*------------------------------------------*/
+    body .container{
+      scroll-behavior:smooth;
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+
     body img{
       display: flex;
       width: 45%;
@@ -86,7 +92,7 @@
       padding-left: 49%;
       padding-bottom: 2rem;
       padding-right: 30rem;
-      width: 130%;
+      width: 100%;
     }
   }
 
