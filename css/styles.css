@@ -54,7 +54,10 @@ a {
         scroll-behavior:smooth;
         margin: 0 auto;
         max-width: 1024px;
+        margin-left: -8px;
       }
+
+      
 
     #cabecera-principal{
         display: flex;
@@ -196,6 +199,7 @@ a {
       flex-basis: 0;
       flex-grow: 1;
       height: 30rem;
+      padding-bottom: 10px;
     }
     
     .section-content{
@@ -269,14 +273,7 @@ a {
       margin-right: 6rem;
       padding-bottom: 1rem;
     }
-    
-    .cajas-noticias{
-      display: flex;
-      justify-content: space-between;
-      margin-right: 4rem;
-      margin-left: 4rem;
-      padding-bottom: 5rem;
-    }
+
     
     main .cajas-noticias p{
       padding-top: 10px;
@@ -490,10 +487,12 @@ a {
       .cajas-noticias{
         display: flex;
         justify-content: space-between;
-        margin-right: 4rem;
-        margin-left: 4rem;
+        margin-right: 0;
+        margin-left: 0;
         padding-bottom: 5rem;
-        width: 90%;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       main .cajas-noticias p{
         padding-top: 10px;
@@ -716,6 +715,7 @@ a {
         scroll-behavior:smooth;
         margin: 0 auto;
         max-width: 768px;
+        margin-left: -8px;
       }
 
     #cabecera-principal{
@@ -932,14 +932,6 @@ a {
       margin-left: 6rem;
       margin-right: 6rem;
       padding-bottom: 1rem;
-    }
-    
-    .cajas-noticias{
-      display: flex;
-      justify-content: space-between;
-      margin-right: 4rem;
-      margin-left: 4rem;
-      padding-bottom: 5rem;
     }
     
     main .cajas-noticias p{
@@ -1159,7 +1151,10 @@ a {
         margin-right: 4rem;
         margin-left: 4rem;
         padding-bottom: 5rem;
-        width: 90%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        
       }
       main .cajas-noticias p{
         padding-top: 0px;
@@ -1373,9 +1368,666 @@ a {
       }
   }
   
-  /* Estilos para dispositivos móviles (320px y superiores) */
+  /* ------------------- Estilos para dispositivos móviles (320px y superiores) -----------------------------*/
   @media (max-width: 320px) {
-    /* Agrega aquí tus estilos específicos para 320px */
+    body main{
+      scroll-behavior:smooth;
+      margin: 0 auto;
+      max-width: 768px;
+      margin-left: -8px;
+    }
+
+  #cabecera-principal{
+      display: flex;
+      margin: 0;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1px;
+      justify-content: center; 
+      align-items: center; 
+    }
+
+  .seccion-titulo{
+      display: flex;
+      background-image: url(../imagenes/fondo-titulo-2.jpg);
+      background-attachment:fixed;
+      background-position: center;
+      background-size: cover; /* Ajusta el tamaño de la imagen */
+      align-items: center;
+      height: 40rem;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  main .querida-comunidad img {
+      max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+      height: auto;
+  }
+
+  .bar-nav{
+      display: grid;
+      background-color: #EFF5F5;
+      align-items:center;
+      align-content: center;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      background-color: rgba(51, 34, 34, 0.5); /*Cambia el valor alfa para ajustar la transparencia (0.0 a 1.0)*/
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  .logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center; /* Centra verticalmente el logo */
+    height: 100px; /* Ajusta la altura del logo según tu preferencia */
+    background-color: rgb(241, 232, 232, 0.8); /*Cambia el valor alfa para ajustar la transparencia (0.0 a 1.0)*/
+  }
+  
+  .logo-img {
+    width: 90%; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    margin-right: auto; /* Alinea el logo a la derecha del contenedor */
+    margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
+    flex-direction: column;
+  }
+  
+  
+  .links {
+    display: grid;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'Belanosima', sans-serif;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
+    gap: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .links a {    
+      margin-left: 0%; /* Agrega un margen entre los enlaces */
+      margin-right: 0%;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-decoration: none;
+  }
+  
+  h2 {
+    height: 15rem;
+    color: #ff7300;
+    font-size: 50px;  
+  }
+  
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #e9e6e6;
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    text-shadow:0capa 0capa 0capa rgba(0, 0, 0, 0.5);
+    padding-bottom: 10%;
+  }
+  
+  #quienes-somos h2{
+    height: 7rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  main .cajas-noticias .noticia-card h3{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-shadow: none;
+  }
+  
+  .noticia-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px; 
+    max-width: 370px;
+    text-align: center;
+  }
+  
+  footer div h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #d3e92b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  footer div iframe{
+    width: 100%;
+    height: 85%;
+    border-radius: 10%;
+  }
+  footer div {
+    text-decoration: none;
+    /* border: solid rgb(4, 4, 36); */
+    flex-basis: 0;
+    flex-grow: 1;
+    height: 30rem;
+  }
+  
+  .section-content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  #por-que-elegirnos img{
+    width: 80%;
+    max-width: 66%;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-left: 6%;
+  }
+  
+  #propuesta-educativa img{
+    width: 70%;
+    max-width: 70%;
+    margin-right: 10%; 
+    margin-left: 1rem; 
+    padding-top: 0;
+    padding-left: 1%;
+    border: solid;
+  }
+  
+  #propuesta-educativa h4{
+    display: flex;
+    flex-direction: column;
+    color: #e9e6e6;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 16px;
+    font-weight: 90;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;  
+  }
+  
+  #propuesta-educativa p{
+    height: 0.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .contiene-propuesta{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    padding-bottom: 5rem;
+  }
+  
+  #ultimas-noticias h2{
+    color: black;
+    text-shadow: none;
+    height: 7rem;
+  }
+  
+  #ultimas-noticias p {
+    color: #000000;
+    text-shadow: none;
+    height: 0.1rem;
+    font-size: 17px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-bottom: 1rem;
+  }
+  
+  main .cajas-noticias p{
+    padding-top: 10px;
+    color: #000000;
+    text-shadow: none;
+    height: 0.1rem;
+  }
+  
+  main .cajas-noticias img{
+    width: 100%;
+    height: 40%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+    padding-left: 0;
+    /* padding: 10%; */
+  }
+
+  .section-content img {
+      width: 18em;
+      max-width: 100%;
+      margin-right: 1%;
+      margin-left: -3em;
+      padding-top: 5%;
+      padding-left: 12%;
+      /* padding: 10%; */
+    } 
+  
+    .bar-nav{
+      width: 100%;
+    }git pu
+  
+    h2 {
+      padding-top: 0rem;
+      height: 0rem;
+      color: #ff7300;
+      font-size: 25px;
+      margin-top: -50px;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      color: #e9e6e6;
+      font-family: Arial, sans-serif; /* Tipo de fuente */
+      text-shadow:0capa 0capa 0capa rgba(0, 0, 0, 0.5);
+      padding-bottom: 10%;
+    }
+  
+    main #por-que-elegirnos div p {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-left: 2px;
+      color: #e9e6e6;
+      font-family: Arial, sans-serif; /* Tipo de fuente */
+      text-shadow:0capa 0capa 0capa rgba(0, 0, 0, 0.5);
+    }
+  
+    main #quienes-somos h2{
+      height: 5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    #quienes-somos{
+      display: flex;
+      background-color: #00425A;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 6rem;
+      margin-bottom: 100px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 10;
+      color: #e9e6e6;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    main{
+      width: 140%;
+    }
+    main #por-que-elegirnos h2{
+      height: 5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  
+    main .cajas-noticias .noticia-card h3{
+      color: black;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-shadow: none;
+    }
+  
+    .noticia-card {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: solid;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px; 
+      max-width: 290px;
+      text-align: center;
+      width: 150rem;
+    }
+    footer{
+      display: flex;
+      padding: 3%;
+      justify-content: space-between;
+      text-decoration: none;
+      background-color: #181823;
+      margin-top: 5px;
+      margin-bottom: 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 10;
+      color: #d3e92b;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+      width: 100%;
+    }
+    footer div h3 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 20px;
+      color: #d3e92b;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    footer div iframe{
+      width: 90%;
+      height: 80%;
+      border-radius: 10%;
+    }
+    footer div {
+      text-decoration: none;
+      /* border: solid rgb(4, 4, 36); */
+      flex-basis: 0;
+      flex-grow: 1;
+      height: 20rem;
+    }
+    .section-content{
+      display: flex;
+      align-items: center;
+      padding-bottom: 5%;
+      padding-top: 0;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    #por-que-elegirnos img{
+      width: 27rem;
+      /* max-width: 66%; */
+      margin-left: 2rem;
+      padding-top: 2rem;
+      padding-left: 6%;
+      padding-left: 0px;
+    }
+  
+    #propuesta-educativa img{
+      width: 70%;
+      max-width: 70%;
+      margin-right: 10%; 
+      margin-left: 1rem; 
+      padding-top: 0;
+      padding-left: 1%;
+      border: solid;
+    }
+    
+    #propuesta-educativa h4{
+      display: flex;
+      flex-direction: column;
+      color: #e9e6e6;
+      font-family: 'Belanosima', sans-serif;
+      font-size: 16px;
+      font-weight: 90;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1px;  
+    }  
+  
+    #propuesta-educativa p{
+      height: 0.1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 18px;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 0;
+      padding-bottom: 120px;
+    }
+  
+    .contiene-propuesta{
+      display: flex;
+      justify-content: space-between;
+      margin-right: 4rem;
+      margin-left: 4rem;
+      padding-bottom: 5rem;
+    }
+    #ultimas-noticias h2{
+      color: black;
+      text-shadow: none;
+      height: 2rem;
+    }
+    #ultimas-noticias p {
+      color: #000000;
+      text-shadow: none;
+      height: 0.1rem;
+      font-size: 17px;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      padding-bottom: 1rem;
+    }
+    .cajas-noticias{
+      display: flex;
+      justify-content: space-between;
+      margin-right: 4rem;
+      margin-left: 4rem;
+      padding-bottom: 5rem;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      
+    }
+    main .cajas-noticias p{
+      padding-top: 0px;
+      color: #000000;
+      text-shadow: none;
+      height: 0.1rem;
+    }
+  
+    #quienes-somos{
+      display: flex;
+      background-color: #00425A;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 6rem;
+      margin-bottom: 100px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 10;
+      color: #e9e6e6;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }  
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-content: center; */
+      padding: 0px;
+      border-left: 0vw solid #ffffff;
+      border-right: 0vw solid #ffffff;
+      margin: 0px;
+    }
+  
+  #por-que-elegirnos{
+      display: flex;
+      background-color: #1F8A70;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 70px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 10;
+      color: #d3e92b;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #propuesta-educativa{
+    display: flex;
+    background-color: #497207;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 10;
+    color: #d3e92b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  #ultimas-noticias{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 10;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .imagen-elegirnos {
+    display: flex;
+    align-items:10px; /* Alinea verticalmente la imagen y el texto */
+    padding-left: 3rem;
+    margin-right: 10rem; /* Ajusta el margen derecho para separar la imagen del texto */
+  }
+  
+  .section-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 50;
+    color: #e9e6e6;
+  }
+  
+  #propuesta-educativa .section-content{
+    display: block;
+    align-items: center;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  
+  
+  #propuesta-educativa h2{
+    height: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contiene-propuesta div{
+    border: none;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  
+  #ultimas-noticias .section-content {
+    padding-bottom: 1%;
+  }
+  
+  
+  .noticia-card h3 {
+    margin-top: 0;
+  }
+  
+  .noticia-card p {
+    margin-bottom: 0;
+  }
+  
+  footer div h4 {
+    font-size: 20px;
+    color: #EFF5F5;
+    text-align:-webkit-left;
+  }
+  
+  footer div a {
+    font-size: 18px;
+    color: #EFF5F5;
+    text-align:-webkit-left;
+    text-decoration: none;
+  }
+  
+  footer .contactos img{
+    width: 8%;
+    text-align: center;
+    height: 7%;
+    max-width: 10%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  footer .redes-sociales div a {
+    font-size: 24px;
+    color: #EFF5F5;
+    text-align:left;
+  }
+  
+  footer .contactos div a {
+    font-size: 18px;
+    color: #EFF5F5;
+    text-align:center;
+  }
+  
+  footer .redes-sociales img{
+    width: 8%;
+    height: 7%;
+    max-width: 10%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  footer .contactos #Contactos-img-ico{
+    text-align: center;
+    height: 88%;
+    width: 89%;
+    padding-left: 42px;
+  }
+  
+  .titulo {
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: #ff7300;
+    padding-top: 71px;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 10px 10px 4px rgba(10, 10, 10, 3.5);
+    -webkit-text-stroke: 0.1px #2b210d;
+    font-family: 'Belanosima', sans-serif;
+    }
+  
+    h1{
+      height: 6rem;
+      color: #ff7300;
+    }
+  
+    #formulario {
+      height: 50rem;
+      width: 100%;
+    }
   }
   
 
