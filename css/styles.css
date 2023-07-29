@@ -1373,7 +1373,7 @@ a {
     body main{
       scroll-behavior:smooth;
       margin: 0 auto;
-      max-width: 768px;
+      max-width: 320px;
       margin-left: -8px;
     }
 
@@ -1397,7 +1397,7 @@ a {
       background-position: center;
       background-size: cover; /* Ajusta el tamaño de la imagen */
       align-items: center;
-      height: 40rem;
+      height: 60rem;
       width: 100%;
       justify-content: center;
       flex-direction: column;
@@ -1405,7 +1405,7 @@ a {
 
   main .querida-comunidad img {
       max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
-      height: auto;
+      height: 0;
   }
 
   .bar-nav{
@@ -1426,12 +1426,12 @@ a {
     display: flex;
     justify-content: center; /* Centra horizontalmente el logo */
     align-items: center; /* Centra verticalmente el logo */
-    height: 100px; /* Ajusta la altura del logo según tu preferencia */
+    height: 60px; /* Ajusta la altura del logo según tu preferencia */
     background-color: rgb(241, 232, 232, 0.8); /*Cambia el valor alfa para ajustar la transparencia (0.0 a 1.0)*/
   }
   
   .logo-img {
-    width: 90%; /* Ajusta el ancho de la imagen según tu preferencia */
+    width: 60%; /* Ajusta el ancho de la imagen según tu preferencia */
     height: auto; /* Mantiene la proporción de aspecto original */
     margin-right: auto; /* Alinea el logo a la derecha del contenedor */
     margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
@@ -1463,9 +1463,9 @@ a {
   }
   
   h2 {
-    height: 15rem;
+    height: 17rem;
     color: #ff7300;
-    font-size: 50px;  
+    font-size: 37px;  
   }
   
   p {
@@ -1521,14 +1521,6 @@ a {
     height: 30rem;
   }
   
-  .section-content{
-    display: flex;
-    align-items: center;
-    padding-bottom: 5%;
-    padding-top: 0;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
   
   #por-que-elegirnos img{
     width: 80%;
@@ -1602,23 +1594,20 @@ a {
   
   main .cajas-noticias img{
     width: 100%;
-    height: 40%;
+    height: 60%;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-top: 0;
     padding-left: 0;
-    /* padding: 10%; */
   }
 
   .section-content img {
-      width: 18em;
-      max-width: 100%;
-      margin-right: 1%;
-      margin-left: -3em;
-      padding-top: 5%;
-      padding-left: 12%;
-      /* padding: 10%; */
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 5%;
     } 
   
     .bar-nav{
@@ -1696,10 +1685,13 @@ a {
       border: solid;
       border-radius: 5px;
       padding: 15px;
-      margin: 10px; 
-      max-width: 290px;
+      margin: -8px;
+      max-width: 280px;
       text-align: center;
-      width: 150rem;
+      width: 139rem;
+      margin-left: 1px;
+      margin-right: 1px;
+      margin-top: 10px;
     }
     footer{
       display: flex;
@@ -1737,7 +1729,7 @@ a {
       height: 20rem;
     }
     .section-content{
-      display: flex;
+      display: grid;
       align-items: center;
       padding-bottom: 5%;
       padding-top: 0;
@@ -1745,10 +1737,10 @@ a {
       padding-right: 2%;
     }
     #por-que-elegirnos img{
-      width: 27rem;
-      /* max-width: 66%; */
-      margin-left: 2rem;
-      padding-top: 2rem;
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      padding-top: 0rem;
       padding-left: 6%;
       padding-left: 0px;
     }
@@ -1779,18 +1771,20 @@ a {
       height: 0.1rem;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       font-size: 18px;
-      margin-left: 3rem;
-      margin-right: 3rem;
+      margin-left: 0;
+      margin-right: 0;
       margin-top: 0;
-      padding-bottom: 120px;
+      margin-bottom: 0px;
+      padding-bottom: 250px;
     }
   
     .contiene-propuesta{
-      display: flex;
+      display: grid;
       justify-content: space-between;
-      margin-right: 4rem;
-      margin-left: 4rem;
+      margin-right: 0;
+      margin-left: 0;
       padding-bottom: 5rem;
+      width: 65%;
     }
     #ultimas-noticias h2{
       color: black;
@@ -1801,13 +1795,13 @@ a {
       color: #000000;
       text-shadow: none;
       height: 0.1rem;
-      font-size: 17px;
-      margin-left: 6rem;
-      margin-right: 6rem;
-      padding-bottom: 1rem;
+      font-size: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 15rem;
     }
     .cajas-noticias{
-      display: flex;
+      display: grid;
       justify-content: space-between;
       margin-right: 4rem;
       margin-left: 4rem;
@@ -1912,12 +1906,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+    padding: 0;
+      padding-top: 0px;
+    padding-top: 9px;
+    margin: 0;
+    width: 101%;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: 50;
+    font-size: -11px;
+    font-weight: 60;
     color: #e9e6e6;
   }
   
@@ -1935,12 +1931,15 @@ a {
   #propuesta-educativa h2{
     height: 5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    padding-bottom: 30%;
   }
   
   .contiene-propuesta div{
     border: none;
     flex-basis: 0;
     flex-grow: 1;
+    width: 162%;
   }
   
   #ultimas-noticias .section-content {
