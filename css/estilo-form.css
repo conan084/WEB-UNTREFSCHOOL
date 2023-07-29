@@ -1,35 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
-  
-  body {
-    overflow-y: hidden;
-  }
-
-  .container{
-    background-color: #1f6acc93;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 
 
-
-  .form-register {
-    width: 450px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-left: 57rem;
-    margin-top: 0;
-    border-radius: 20px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-  }
 
   @media (max-width: 1024px) { /*------------------------------------------*/
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden;
+      max-width: 1024px;
+      background-color: #1f6acc93;
+    }
+
+    .container{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
     body .container{
       scroll-behavior:smooth;
       margin: 0 auto;
@@ -42,115 +30,372 @@
       position: fixed;
       top: 0;
     }
+
     .form-register {
-      width: 450px;
+      margin-top: 48%;
+      margin-bottom: 50px;
+      width: 50%;
       background: #24303c;
       padding: 30px;
       margin: auto;
-      margin-left: 51%;
-      margin-top: 0;
+      margin-left: 25%;
+      margin-top: 4rem;
       border-radius: 20px;
       font-family: 'calibri';
       color: white;
       box-shadow: 7px 13px 37px #000;
     }
+
+
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .controls {
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+    }
+  
+    #comentario{
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+      height: 150px;
+    }
+  
+    .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  
+    .form-register a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .botons {
+      transition: all 0.3s ease;
+    }
+    
+    /* Define los estilos para cuando el cursor esté sobre el botón */
+    .botons:hover {
+      background-color: #4CAF50; /* Cambia el color de fondo */
+      color: white; /* Cambia el color del texto */
+      transform: scale(1.1); /* Hace que el botón se agrande un poco */
+    }
+  
+
+    .form-register .botons {
+      width: 100%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+
+    body style a{
+      margin-top: 90px;
+    }
+
+    .boton-volver {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff7300;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .boton-volver:hover {
+      background-color: #0056b3;
+    }
+  } /*-----------------------------------------------------------------------------------------------*/
+
+  /* ---------------------------------------------------- Tablet ----------------------------------------*/
+  @media (max-width: 768px) {
+    body {
+      overflow-y: hidden;
+      max-width: 768px;
+      background-color: #1f6acc93;
+    }
+
+    .container{
+      /* background-color: #1f6acc93; */
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    body .container{
+      scroll-behavior:smooth;
+      margin: 0 auto;
+      max-width: 1024px;
+    }
+
+    body img{
+      display: flex;
+      width: 45%;
+      position: fixed;
+      top: 0;
+    }
+
+    .form-register {
+      width: 60%;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-left: 20%;
+      margin-top: 60px;
+      border-radius: 20px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+    }
+
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  
+    .controls {
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+    }
+  
+    #comentario{
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+      height: 150px;
+    }
+  
+    .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  
+    .form-register a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+        /* Añade transiciones al botón para que tenga efecto de animación */
+    .botons {
+      transition: all 0.3s ease;
+    }
+
+    /* Define los estilos para cuando el cursor esté sobre el botón */
+    .botons:hover {
+      background-color: #4CAF50; /* Cambia el color de fondo */
+      color: white; /* Cambia el color del texto */
+      transform: scale(1.1); /* Hace que el botón se agrande un poco */
+    }
+  
+    .form-register .botons {
+      width: 100%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+    style{
+      margin-top: 12px;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff7300;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .boton-volver:hover {
+      background-color: #0056b3;
+    }
+  }
+
+
+  /* ------------------------------------------ Telefono --------------------------------------------------*/
+  @media (max-width: 320px) {
+    body {
+      overflow-y: hidden;
+      max-width: 320px;
+      max-height: 700px;
+      background-color: #1f6acc93;
+    }
+
+    body .container{
+      scroll-behavior:smooth;
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    body img{
+      display: flex;
+      width: 45%;
+      position: fixed;
+      top: 0;
+    }
+
+    .form-register {
+      width: 96%;
+      background: #24303c;
+      padding: 15px;
+      /* margin: auto; */
+      margin-left: 5px;
+      margin-top: 30px;
+      border-radius: 20px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+    }
+
     .container{
       background-color: #1f6acc93;
       padding-top: 0rem;
       padding-bottom: 0rem;
     }
-  } /*-----------------------------------------------------------------------------------------------*/
 
-  /* ------------ Tablet ----------*/
-  @media (max-width: 768px) {
-    
-  }
-
-
-  /* ------------ Telefono ----------*/
-  @media (min-width: 320px) {
-    body img{
-      display: none;
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 15px;
     }
-    .form-register {
-      width: 35rem;
-      height: 40rem;
-      background: #24303c;
-      padding: 30px;
-      margin: auto;
-      margin-left: -16rem;
-      margin-right: 0rem;
-      margin-top: 0;
-      border-radius: 20px;
-      font-family: 'calibri';
-      color: white;
-      box-shadow: 7px 13px 37px #000;
-    }
-    .container{
-      background-color: #1f6acc93;
-      padding-top: 2rem;
-      padding-left: 49%;
-      padding-bottom: 2rem;
-      padding-right: 30rem;
+  
+    .controls {
       width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+    }
+  
+    #comentario{
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+      height: 150px;
+    }
+  
+    .form-register p {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  
+    .form-register a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* Añade transiciones al botón para que tenga efecto de animación */
+    .botons {
+      transition: all 0.3s ease;
+    }
+
+    /* Define los estilos para cuando el cursor esté sobre el botón */
+    .botons:hover {
+      background-color: #4CAF50;
+       /* Cambia el color de fondo */
+      color: white;
+      /* Cambia el color del texto */
+      transform: scale(1.1);
+      /* Hace que el botón se agrande un poco */
+    }
+  
+    .form-register .botons {
+      width: 100%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+
+    style{
+      margin-top: 12px;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff7300;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .boton-volver:hover {
+      background-color: #0056b3;
     }
   }
 
 
-  
-  .form-register h4 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-  }
-  
-  #comentario{
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-    height: 150px;
-  }
-  
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .form-register a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .form-register a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  .form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-  }  
+
+ 

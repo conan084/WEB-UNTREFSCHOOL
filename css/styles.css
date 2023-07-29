@@ -1074,6 +1074,7 @@ a {
         flex-basis: 0;
         flex-grow: 1;
         height: 20rem;
+        padding-bottom: 50px;
       }
       .section-content{
         display: flex;
@@ -1341,7 +1342,7 @@ a {
     footer .contactos #Contactos-img-ico{
       text-align: center;
       height: 88%;
-      width: 89%;
+      width: 102%;
       padding-left: 42px;
     }
     
@@ -1651,6 +1652,7 @@ a {
     main #quienes-somos h2{
       height: 5rem;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0px;
     }
   
     #quienes-somos{
@@ -1719,6 +1721,8 @@ a {
       font-size: 20px;
       color: #d3e92b;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      padding-bottom: 0;
+      margin-bottom: -15px;
     }
     footer div iframe{
       width: 90%;
@@ -1730,8 +1734,8 @@ a {
       /* border: solid rgb(4, 4, 36); */
       flex-basis: 0;
       flex-grow: 1;
-      height: 20rem;
-      padding-bottom: 50px;
+      height: 17rem;
+      padding-bottom: 0px;
     }
     .section-content{
       display: grid;
@@ -1989,7 +1993,7 @@ a {
   }
   
   footer .contactos div a {
-    font-size: 18px;
+    font-size: 16px;
     color: #EFF5F5;
     text-align:center;
   }

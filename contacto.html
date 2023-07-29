@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <img src="imagenes/contact-us.jpg" alt="Imagen comunidad">
+        <!-- <img src="imagenes/contact-us.jpg" alt="Imagen comunidad"> -->
         <section class="form-register">
             <h4>Formulario de Contacto</h4>
             <form action="https://formsubmit.co/hernancossu@gmail.com" method="POST"> 
+                <input type="hidden" name="url" value="127.0.0.1:5500">
                 <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
                 <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
                 <input class="controls" type="number" name="dni" id="dni" placeholder="DNI">
@@ -21,9 +22,13 @@
                 <input class="controls" type="text" name="comentario" id="comentario" placeholder="Dejenos su comentario">
                 <input class="botons" type="submit" value="Enviar Formulario">
             </form>
-
+            
             <!-- <p><a href="#">¿Ya tengo Cuenta?</a></p> -->
-        </section>
+        </section>     
+    </div>
+      <!-- Botón para ir a otra página web -->
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <a href="index.html" class="boton-volver">Volver</a>
     </div>
 </body>
 </html>
