@@ -1381,7 +1381,7 @@ a {
       display: flex;
       margin: 0;
       color: #000000;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 900;
       text-align: center;
       text-transform: uppercase;
@@ -1408,6 +1408,8 @@ a {
       height: 0;
   }
 
+
+
   .bar-nav{
       display: grid;
       background-color: #EFF5F5;
@@ -1422,16 +1424,17 @@ a {
   }
   
   
+
   .logo {
     display: flex;
     justify-content: center; /* Centra horizontalmente el logo */
     align-items: center; /* Centra verticalmente el logo */
-    height: 60px; /* Ajusta la altura del logo según tu preferencia */
+    height: 40px; /* Ajusta la altura del logo según tu preferencia */
     background-color: rgb(241, 232, 232, 0.8); /*Cambia el valor alfa para ajustar la transparencia (0.0 a 1.0)*/
   }
   
   .logo-img {
-    width: 60%; /* Ajusta el ancho de la imagen según tu preferencia */
+    width: 40%; /* Ajusta el ancho de la imagen según tu preferencia */
     height: auto; /* Mantiene la proporción de aspecto original */
     margin-right: auto; /* Alinea el logo a la derecha del contenedor */
     margin-left: auto; /* Alinea el logo a la izquierda del contenedor */
@@ -1444,13 +1447,13 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     font-family: 'Belanosima', sans-serif;
-    width: 100%;
+    width: 101%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 8px;
-    gap: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 1px;
+    gap: 12px;
+    padding-top: 4px;
+    padding-bottom: 5px;
   }
   
   
@@ -1608,6 +1611,7 @@ a {
     margin-right: 0;
     margin-left: 0;
     padding-top: 5%;
+    padding-left: 0;
     } 
   
     .bar-nav{
@@ -1694,7 +1698,7 @@ a {
       margin-top: 10px;
     }
     footer{
-      display: flex;
+      display: grid;
       padding: 3%;
       justify-content: space-between;
       text-decoration: none;
@@ -1727,6 +1731,7 @@ a {
       flex-basis: 0;
       flex-grow: 1;
       height: 20rem;
+      padding-bottom: 50px;
     }
     .section-content{
       display: grid;
@@ -2002,7 +2007,7 @@ a {
     text-align: center;
     height: 88%;
     width: 89%;
-    padding-left: 42px;
+    padding-left: 13px;
   }
   
   .titulo {
